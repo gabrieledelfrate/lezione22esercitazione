@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lezione22esercitazione</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <script src="assets/bootstrap.js"></script>
+    <script src="script1.js"></script>
+</head>
+<body class="bg-warning">
+  <div class="container p-5">
+        <h1>Anagrafe Animali Domestici</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form id="petForm">
+              <label for="petName">Nome Animale:</label>
+              <input type="text" id="petName" name="petName"><br><br>
+      
+              <label for="ownerName">Nome Proprietario:</label>
+              <input type="text" id="ownerName" name="ownerName"><br><br>
+      
+              <label for="species">Specie:</label>
+              <input type="text" id="species" name="species"><br><br>
+      
+              <label for="breed">Razza:</label>
+              <input type="text" id="breed" name="breed"><br><br>
+      
+              <input type="submit" value="Aggiungi Animale" class="btn btn-primary">
+            </form>
+          </div>
+        </div>
+
+        <div class="container bg-light">
+          <h2 class="mt-5">Lista Animali Domestici Inseriti</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul id="petList" class="list-group"></ul>
+            </div>
+          </div> 
+        </div> 
+
+
+
+        <div class="container bg-light">
+          <h2 class="mt-5">Lista Animali con lo stesso proprietario</h2>
+          <form id="owner">
+          <label for="owner">Nome Proprietario</label>
+                <input type="text" id="ownerN" name="owner"><br><br>
+          </form>
+  
+          <button id="findSameOwnerBtn" class="btn btn-primary">Trova Animali con lo stesso Proprietario</button>
+  
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul id="sameOwnerPets"></ul>
+            </div>
+          </div>  
+        </div>
+      
+        <script src="script2.js"></script>
+  </div>      
+</body>
+</html>
